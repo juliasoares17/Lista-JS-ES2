@@ -1,0 +1,95 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f9fc;
+    font-family: sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding: 25px;
+    background-color: white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+h1{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #f2f2f2;
+    padding-bottom: 15px;
+}
+
+.entradas{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 27px;
+}
+
+.labels{
+    margin-bottom: 8px;
+    color: #585858;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.inputs{
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 400px;
+}
+
+.button_limpar, .button_calcular{
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button_limpar{
+    margin-top: 5px;
+}
+
+.button_limpar:hover {
+    background-color: #c9c9c9;
+}
+
+.button_calcular{
+    margin-top: 12px;
+    background-color: #3498db;
+    color: white;
+}
+
+.button_calcular:hover {
+    background-color: #2980b9;
+}
+
+.resultado_div {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #f2f9ff;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+h4 {
+    color: #333;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.esconder{
+    display: none;
+}

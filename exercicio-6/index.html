@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Aritmética</title>
+</head>
+<body>
+    <div class="container">
+    <h1>Calculadora Aritmética</h1>
+    <div class="entradas">
+    <label for="numero1" class="labels">Primeiro número:</label>
+    <input type="text" id="numero1" class="inputs">
+    </div>
+    <div class="entradas">
+    <label for="operacao" class="labels">Operação:</label>
+    <input type="text" id="operacao" class="inputs">
+    </div>
+    <div class="entradas">
+    <label for="numero2" class="labels">Segundo número:</label>
+    <input type="text" id="numero2" class="inputs">
+    </div>
+    <br>
+    <button class="button_limpar" onclick="limparCampos()">Limpar</button>
+    <button class="button_calcular" onclick="calculo()">Calcular</button>
+    <div class="resultado_div esconder" id="resultado_container">
+    <h4 id="resultado"></h4>
+    </div>
+    </div>
+</body>
+</html>

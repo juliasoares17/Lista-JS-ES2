@@ -1,0 +1,103 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5;
+    font-family: sans-serif
+}
+
+.conteudo-geral{
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 480px;
+    height: 435px;
+    border-radius: 15px;
+}
+
+.entradas{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.grupo_input{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 20px 0 65px;
+}
+
+.label_input{
+    margin-bottom: 0.5rem;
+    color: #555;   
+}
+
+.input{
+    margin-bottom: 1.5rem;
+    height: 10px;
+    width: 80%;
+    padding: 0.8rem;
+    font-size: 1rem;
+}
+
+.titulo{
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.botoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.botao_calcular, .botao_limpar{
+    border-radius: 10px;
+    padding: 8px;
+    width: 75%;
+    padding: 1rem; 
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao_calcular{
+    background-color: #4CAF50;
+}
+
+.botao_calcular:hover {
+    background-color: #2e8434;
+}
+
+.botao_limpar{
+    background-color: #b3b3b3;
+    margin-top: 14px;
+}
+
+.botao_limpar:hover {
+    background-color: #707070;
+}
+
+.div_resultado{
+    display: flex;
+    text-align: center;
+    margin-top: 45px;
+    width: 480px;
+    border-radius: 15px;
+    background-color: #ccd5e9;
+}
+
+.esconder{
+    display: none;
+}
+
+.resultado{
+    color: #555;
+}

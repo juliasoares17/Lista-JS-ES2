@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Média</title>
+</head>
+<body>
+    <h1 class="titulo">Calculadora de Média</h1>
+    <div class="container">
+    <h2>Notas:</h2>
+    <div class="entradas">
+    <label for="nota_lab">Atividade prática em laboratório:</label>
+    <input type="text" id="nota_lab" class="input">
+    <label for="nota_prova">Prova do semestre:</label>
+    <input type="text" id="nota_prova" class="input">
+    <label for="nota_trabalho">Trabalho teórico:</label>
+    <input type="text" id="nota_trabalho" class="input">
+    </div>
+    <div class="position_buttons">
+    <div class="buttons">
+    <button onclick="limparCampos()" class="button_limpar">Limpar</button>
+    <button onclick="calculoMedia()" class="button_enviar">Enviar</button>
+    </div>
+    </div>
+    </div>
+    <div class="resultado esconder" id="resultado_div">
+    <h4 id="resultado"></h4>
+    </div>
+</body>
+</html>

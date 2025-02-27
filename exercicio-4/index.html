@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Metalúrgica</title>
+</head>
+<body>
+    <div class="container">
+    <header class="titulo">
+        <h1>Calculadora de Frete - Metalúrgica</h1>
+    </header>
+    <br>
+    <label for="rastreamento" class="label">Deseja rastreamento?</label>
+    <input type="text" id="rastreamento" class="input">
+    <label for="numero_pecas" class="label">Número de peças:</label>
+    <input type="text" id="numero_pecas" class="input">
+    <label for="regiao" class="label">Região:</label>
+    <input type="text" id="regiao" class="input">
+    <label for="distancia" class="label">Distância (em km):</label>
+    <input type="text" id="distancia" class="input">
+    <label for="combustivel" class="label">Valor do litro de combustível:</label>
+    <input type="text" id="combustivel" class="input">
+    <div class="buttons">
+    <button class="button_limpar" onclick="limparCampos()">Limpar</button>
+    <button class="button_calcular" onclick="calcularFrete()">Calcular Frete</button>
+    </div>
+    </div>
+    <div id="resultado" class="result-container esconder">
+        <h3>Resultado do Cálculo</h3>
+        <div class="result-item">
+            <span>Taxa do rastreamento:</span>
+            <span id="result-rastreamento"></span>
+        </div>
+        <div class="result-item">
+            <span>Valor do frete pelas peças:</span>
+            <span id="result-frete-pecas"></span>
+        </div>
+        <div class="result-item">
+            <span>Valor do frete por quilômetro:</span>
+            <span id="result-frete-km"></span>
+        </div>
+        <div class="result-item">
+            <span>Total do frete:</span>
+            <span id="result-total"></span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

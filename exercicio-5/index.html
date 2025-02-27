@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Salário Hotelaria</title>
+</head>
+<body>
+    <h1>Cálculo de Salário - Rede Hoteleira</h1>
+    <div class="container">
+    <div class="entradas">
+    <label for="codigo">Código:</label>
+    <input type="text" id="codigo" class="inputs">
+    </div>
+    <div class="entradas">
+    <label for="horas_trab">Horas trabalhadas no mês:</label>
+    <input type="text" id="horas_trab" class="inputs">
+    </div>
+    <div class="entradas">
+    <label for="turno">Turno:</label>
+    <input type="text" id="turno" class="inputs">
+    </div>
+    <div class="entradas">
+    <label for="categoria">Categoria:</label>
+    <input type="text" id="categoria" class="inputs">
+    </div>
+    <div class="entradas">
+    <label for="salario_minimo">Valor do salário mínimo em seu estado:</label>
+    <input type="text" id="salario_minimo" class="inputs">
+    </div>
+    <div class="buttons">
+    <button class="button_limpar" onclick="limparCampos()">Limpar</button>
+    <button class="button_calcular" onclick="resultado()">Calcular</button>
+    </div>
+    <div id="resultado" class="resultado_div esconder">
+        <h3>Resultado do cálculo:</h3>
+            <p id="codigo_result"></p>
+            <p id="horas_trab_result"></p>
+            <p id="valor_hora_result"></p>
+            <p id="salario_inicial_result"></p>
+            <p id="auxilio_result"></p>
+            <p id="salario_final_result"></p>
+    </div>
+    </div>
+</body>
+</html>
