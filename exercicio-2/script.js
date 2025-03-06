@@ -7,13 +7,13 @@ function faixaEtaria(){
 
     var mensagem = ''
     if (idade >= 0 && idade < 15){
-        var mensagem = 'criança'
+        mensagem = 'criança'
     } else if (idade >= 15 && idade < 30){
-        var mensagem = 'jovem'
+        mensagem = 'jovem'
     } else if (idade >= 30 && idade < 60){
-        var mensagem = 'adulto'
+        mensagem = 'adulto'
     } else {
-        var mensagem = 'idoso'
+        mensagem = 'idoso'
     }
     document.getElementById('resultado').classList.remove('escondido')
     document.getElementById('resultado').innerText = `Com ${idade} anos, você é classificado como ${mensagem}!`
