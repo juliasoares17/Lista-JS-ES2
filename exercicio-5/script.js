@@ -76,7 +76,7 @@ function auxilioAlimentacao(){
     if (salario_inicial <= 800){
         var auxilio = 0.25 * salario_inicial
     } else if (salario_inicial > 800 && salario_inicial <= 1200){
-        var auxilio = 0.20 * salarioInicial
+        var auxilio = 0.20 * salario_inicial
     } else if (salario_inicial > 1200){
         var auxilio = 0.15 * salario_inicial
     }
